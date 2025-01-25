@@ -120,7 +120,7 @@ const ProductCart = ({ products, removeProduct, startNewOrder }) => {
             <div className="w-full flex flex-col gap-5 py-5">
               <div className="max-w-10">
                 <img
-                  src="/icons/icon-order-confirmed.svg"
+                  src="icons/icon-order-confirmed.svg"
                   alt="Icon Order Confirmed"
                 />
               </div>
@@ -149,7 +149,7 @@ const ProductCart = ({ products, removeProduct, startNewOrder }) => {
                           />
                         </div>
                         <div className="flex flex-col gap-2 text-sm">
-                          <div className="font-semibold text-rose-custom-900 whitespace-nowrap max-w-36 md:max-w-40 overflow-ellipsis overflow-hidden bg-red-500">
+                          <div className="font-semibold text-rose-custom-900 whitespace-nowrap max-w-36 md:max-w-40 overflow-ellipsis overflow-hidden">
                             {products[index].name}
                           </div>
                           <div className="flex">
