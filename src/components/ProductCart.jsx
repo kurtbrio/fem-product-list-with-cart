@@ -115,8 +115,8 @@ const ProductCart = ({ products, removeProduct, startNewOrder }) => {
 
       {/* order confirmed container */}
       {orderConfirmed && (
-        <div className="h-screen w-screen fixed bottom-0 left-0 bg-black/50 z-[999] flex flex-col justify-end items-center md:justify-center">
-          <div className="bg-rose-custom-50 p-5 rounded-t-xl md:rounded-xl w-full md:max-w-lg">
+        <div className="h-screen w-screen fixed bottom-0 left-0 bg-black/50 z-[999] flex flex-col justify-end items-center md:justify-center ">
+          <div className="bg-rose-custom-50 p-5 rounded-t-xl md:rounded-xl  w-full md:max-w-lg">
             <div className="w-full flex flex-col gap-5 py-5">
               <div className="max-w-10">
                 <img
@@ -133,7 +133,7 @@ const ProductCart = ({ products, removeProduct, startNewOrder }) => {
                 </p>
               </div>
             </div>
-            <div className="bg-rose-custom-100 rounded-t-lg px-5 w-full overflow-y-auto max-h-72">
+            <div className="bg-rose-custom-100 rounded-t-lg px-5 w-full overflow-y-auto max-h-52">
               {totalPerProduct.map((product, index) => (
                 <>
                   {product > 0 && (
