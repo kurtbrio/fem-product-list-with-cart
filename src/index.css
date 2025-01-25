@@ -1,0 +1,47 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+/* tailwind */
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-red-custom: hsl(14, 86%, 42%);
+  --color-red-hover-custom: hsl(14, 92%, 28%);
+  --color-green-custom: hsl(159, 69%, 38%);
+
+  --color-rose-custom-50: hsl(20, 50%, 98%);
+  --color-rose-custom-100: hsl(13, 31%, 94%);
+  --color-rose-custom-300: hsl(14, 25%, 72%);
+  --color-rose-custom-400: hsl(7, 20%, 60%);
+  --color-rose-custom-500: hsl(12, 20%, 44%);
+  --color-rose-custom-900: hsl(14, 65%, 9%);
+
+  /* font */
+  --font-primary: "Red Hat Text", serif;
+}
+
+/* reusable styles */
+#btn-cart {
+  @apply absolute right-1/2 translate-x-1/2 -bottom-6 bg-rose-custom-50 w-44 py-2.5 px-3 flex justify-center items-center rounded-full whitespace-nowrap font-semibold border-rose-custom-300 border-2 hover:border-red-custom hover:text-red-custom;
+}
+
+#btn-cart::before {
+  @apply content-[""] bg-[url("/icons/icon-add-to-cart.svg")] w-5 h-5 inline-block mr-2.5 bg-center;
+}
+
+#btn-qty {
+  @apply absolute right-1/2 translate-x-1/2 -bottom-6 py-2.5 flex justify-between px-3 items-center rounded-full whitespace-nowrap font-semibold bg-red-custom w-44 text-rose-custom-50;
+}
+
+#btn-primary {
+  @apply w-full py-3 mt-6 bg-red-custom rounded-full text-rose-custom-50 font-semibold hover:bg-red-hover-custom;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  @apply transition-all ease-in-out duration-300;
+}
